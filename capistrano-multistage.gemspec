@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "capistrano-multistage"
-  s.version     = "0.9.9"
+  s.version     = "0.9.9.1"
   s.authors     = ["Ewout Vonk"]
   s.email       = ["dev@ewout.to"]
   s.homepage    = "https://github.com/ewoutvonk/capistrano-multistage"

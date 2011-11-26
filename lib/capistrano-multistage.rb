@@ -19,7 +19,8 @@ if caller.any? { |callstack_line| callstack_line =~ /^Capfile:/ }
     stages.each do |name| 
       desc "Set the target stage to `#{name}'."
       task(name) do 
-        set :stage, name.to_sym 
+        set :stage, name.to_sym
+        set :rails_env, name.to_s
         load "#{location}/#{stage}" 
       end 
     end 
